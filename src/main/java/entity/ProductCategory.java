@@ -4,34 +4,44 @@ import java.util.Date;
 
 public class ProductCategory {
 
-    private Long prodCateId;
-    private Long shopID;
-    private String prodCateName;
+    private Long productCategoryId;
+    private Long shopId;
+    private String productCategoryName;
+    private String productCategoryDesc;
     private Integer priority;
     private Date createTime;
+    private Date lastEditTime;
 
-    public Long getProdCateId() {
-        return prodCateId;
+    public Long getProductCategoryId() {
+        return productCategoryId;
     }
 
-    public void setProdCateId(Long prodCateId) {
-        this.prodCateId = prodCateId;
+    public void setProductCategoryId(Long productCategoryId) {
+        this.productCategoryId = productCategoryId;
     }
 
-    public Long getShopID() {
-        return shopID;
+    public Long getShopId() {
+        return shopId;
     }
 
-    public void setShopID(Long shopID) {
-        this.shopID = shopID;
+    public void setShopId(Long shopId) {
+        this.shopId = shopId;
     }
 
-    public String getProdCateName() {
-        return prodCateName;
+    public String getProductCategoryName() {
+        return productCategoryName;
     }
 
-    public void setProdCateName(String prodCateName) {
-        this.prodCateName = prodCateName;
+    public void setProductCategoryName(String productCategoryName) {
+        this.productCategoryName = productCategoryName;
+    }
+
+    public String getProductCategoryDesc() {
+        return productCategoryDesc;
+    }
+
+    public void setProductCategoryDesc(String productCategoryDesc) {
+        this.productCategoryDesc = productCategoryDesc;
     }
 
     public Integer getPriority() {
@@ -48,5 +58,13 @@ public class ProductCategory {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public Date getLastEditTime() {
+        return lastEditTime;
+    }
+
+    public void setLastEditTime(Date lastEditTime) {
+        this.lastEditTime = lastEditTime;
     }
 }
